@@ -8,14 +8,17 @@ namespace DemoGuessingGame
 {
     public class StartUp
     {
+        private Service _service = new();
+        
         public void Run()
         {
-            Console.WriteLine("Running");
+            int maxNum = View.GetMaxNum();
+            _service.CreateRandomNumber(maxNum);
         }
 
         public void CheckGuess()
         {
-            // TODO: Guess a number between one and some max
+            View.DisplayMessage("Guess a number between 1 and max number: ");
         }
     }
 }
