@@ -4,3 +4,6 @@
 
 using DemoGuessingGame;
 
+StartUp game = new StartUp();
+game.Run();
+
